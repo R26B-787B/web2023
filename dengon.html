@@ -1,0 +1,14 @@
+<b>伝言板</b>
+<p  id="伝言エリア">伝言はまだございません。</p>
+<input  id="入力内容"><button onclick="伝言する();">確定して送信</button>
+
+<script>
+function 伝言する() {
+  if (入力内容.value === "") {
+    alert("空撃ちはやめよーな\u3002");
+  } else {
+    伝言エリア.innerText = 入力内容.value;
+    alert("伝言を送信しました");
+  }
+}
+</script>
